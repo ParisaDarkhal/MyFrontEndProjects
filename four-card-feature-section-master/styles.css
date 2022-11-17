@@ -36,7 +36,10 @@ body {
 }
 
 .picIcon {
+  position: absolute;
   margin-left: 250px;
+  bottom: 20px;
+  right: 20px;
 }
 .attribution {
   font-size: 11px;
