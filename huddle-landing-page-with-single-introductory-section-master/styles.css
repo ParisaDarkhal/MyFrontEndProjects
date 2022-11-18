@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #6648b1 !important; /*change based on design requirments*/
+  font-family: "Open Sans", sans-serif !important;
+  /* font-family: "Poppins", sans-serif !important; change based on design requirments */
+}
+@media (min-width: 768px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+  }
+}
+h1 {
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 600;
+  line-height: 1.5 !important;
+  margin: 30px 10px 30px 30px !important;
+}
+@media (min-width: 768px) {
+  h1 {
+    margin: 100px 10px 30px 30px !important;
+  }
+}
+p {
+  margin-left: 30px !important;
+}
+.mainBox {
+  color: white;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .mainBox {
+    max-width: 1400px !important; /* change based on design requirments */
+    text-align: start;
+  }
+}
+.logoImg {
+  width: 50% !important;
+}
+@media (min-width: 768px) {
+  .logoImg {
+    width: 20% !important;
+  }
+}
+.mockUpImg {
+  width: 100%;
+}
+.registerBtn {
+  margin: 30px 10px 30px 10px;
+  background-color: white !important;
+  color: #6648b1 !important;
+  width: 70% !important;
+  line-height: 2 !important;
+}
+.registerBtn:hover {
+  background-color: #e882e8 !important;
+  color: white !important;
+}
+@media (min-width: 768px) {
+  .registerBtn {
+    width: 40% !important;
+    margin-left: 30px;
+  }
+}
+.socialMediaBox {
+  display: flex;
+  justify-content: center !important;
+}
+@media (min-width: 768px) {
+  .socialMediaBox {
+    justify-content: end !important;
+  }
+}
+.socialMediabtn {
+  border-style: solid;
+  border-color: white !important;
+  background-color: #6648b1;
+}
+.fa-brands {
+  color: white;
+}
+.socialMediabtn:hover {
+  background-color: #6648b1 !important;
+  border-color: #e882e8 !important;
+}
+.fa-brands:hover {
+  color: #e882e8 !important;
+}
+.attribution {
+  color: bisque;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(176, 54%, 48%);
+}
