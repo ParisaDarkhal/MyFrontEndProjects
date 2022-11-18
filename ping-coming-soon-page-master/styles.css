@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background-color: #ffffff !important; /* change based on design requirments */
+  font-family: "Libre Franklin", sans-serif !important; /* change based on design requirments */
+}
+
+@media (min-width: 768px) {
+  .mainBox {
+    max-width: 800px !important; /* change based on design requirments */
+  }
+}
+h1 {
+  color: gray;
+  font-weight: 700px;
+}
+span {
+  color: black;
+  font-weight: bolder;
+}
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+.subBtn {
+  background-color: #4d7bf3 !important;
+  color: white !important;
+  width: 100%;
+}
+.subBtn:hover {
+  background-color: #80a2f8 !important;
+}
+.valid {
+  color: green;
+  text-align: start;
+}
+.invalid {
+  color: red;
+  text-align: start;
+}
+@media (min-width: 768px) {
+  .subBtn {
+    width: 70% !important;
+  }
+}
+
+.socialMediabtn {
+  border-style: solid;
+  border-color: rgb(207, 205, 205);
+}
+.socialMediabtn:hover {
+  background-color: #4d7bf3;
+}
+.fa-brands:hover {
+  color: white !important;
+}
+.copyRight {
+  font-size: 15px;
+  color: gray;
+  margin-top: 30px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
