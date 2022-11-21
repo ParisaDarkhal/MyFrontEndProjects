@@ -1,0 +1,100 @@
+@font-face {
+  font-family: myFont;
+  src: url(assets/fonts/Inter-VariableFont_slntwght.ttf);
+  src: url(assets/fonts/static/Inter-Bold.ttf);
+  src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+  src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+hr {
+  color: white !important;
+}
+h1 {
+  font-size: 3.5rem !important;
+  font-weight: 900 !important;
+}
+h4 {
+  color: rgb(160, 159, 159) !important;
+  font-size: 30px !important;
+}
+
+.mainBox {
+  background-color: white !important;
+}
+@media (min-width: 768px) {
+  .mainBox {
+    max-width: 1450px !important;
+  }
+}
+@media (min-width: 768px) {
+  .D3imgMobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .D3imgDesktop {
+    display: none;
+  }
+}
+.h2inBlack {
+  color: white;
+  font-weight: 600;
+  line-height: 2 !important;
+}
+.pInBlack {
+  color: white;
+  font-weight: 400 !important;
+  font-size: 20px;
+  line-height: 1.7;
+}
+.nav-link:hover {
+  color: #f15d51 !important;
+}
+.headlineP {
+  font-family: myFont;
+  font-size: 20px;
+}
+.readMoreBtn {
+  background-color: #f15d51 !important;
+  color: white !important;
+  letter-spacing: 0.1rem !important;
+}
+.readMoreBtn:hover {
+  background-color: black !important;
+}
+
+.h2inBlack {
+  margin-top: 2.5rem;
+  text-decoration: none !important;
+  font-size: 2rem;
+}
+.h2inBlack:hover {
+  color: #f15d51;
+}
+.cardHeadline {
+  color: black;
+  text-decoration: none !important;
+  font-weight: 800 !important;
+  font-size: 24px !important;
+}
+.cardHeadline:hover {
+  color: #f15d51;
+}
+.pCard {
+  color: gray;
+  font-size: 20px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
