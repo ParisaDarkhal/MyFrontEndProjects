@@ -215,16 +215,20 @@
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We’ll never send you spam or pass on your email address
           </p>
-          <input
+          <form action="#" id="formSubmit">
+            <input
             type="email"
             name="eMail"
-            id="eMail"
+            id="inputEmail1"
             placeholder="Email Address"
             class="rounded-3 lh-lg emailInput"
           />
-          <button class="subscribeBtn">
+          <button class="subscribeBtn" id="subscribeBtn">
             <strong>Subscribe</strong>
           </button>
+          </form>
+          <div id="message"></div>
+          
         </div>
         <div class="col-md-4 order-md-first footerLogoCol">
           
@@ -275,5 +279,6 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
