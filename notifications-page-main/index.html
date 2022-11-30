@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon.ico"
+    />
+    <!-- put favicon image in the href here -->
+
+    <title>Notifications page</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Put google font link under this line -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container bg-light rounded-3 position-relative mainBox">
+      <nav class="navbar sticky-top navbar-light bg-light">
+        <div class="container-fluid">
+          <h4>Notifications <span id="notificationSpan">3</span></h4>
+
+          <button class="navbar-brand" id="markAllBtn" onclick="markAllRead()">
+            Mark All As Read
+          </button>
+        </div>
+      </nav>
+      <div class="cardsContainer">
+        <!--card starts under this line-->
+        <div class="card mb-3 unread" onclick="markOneRead(this)">
+          <div class="row g-0">
+            <div class="col-3">
+              <img
+                src="assets/images/avatar-mark-webber.webp"
+                class="img-fluid rounded-start mt-3 ms-3 mt-md-4 ms-md-4"
+                alt="avatar-mark-webber"
+              />
+            </div>
+            <div class="col-md-9 col-8 textCol">
+              <div class="card-body">
+                <a class="userName" href="#">Mark Webber</a>
+
+                <p class="card-text d-inline">reacted to your recent post</p>
+                <a class="mentionedSite" href="#">
+                  My first tournament today!</a
+                >
+                <span class="redDot">🔴</span>
+
+                <p class="card-text">
+                  <small class="text-muted">1 min ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card ends above this line-->
+        <!--card starts under this line-->
+        <div class="card mb-3 unread" onclick="markOneRead(this)">
+          <div class="row g-0">
+            <div class="col-3">
+              <img
+                src="assets/images/avatar-angela-gray.webp"
+                class="img-fluid rounded-start mt-3 ms-3 mt-md-4 ms-md-4"
+                alt="avatar-angela-gray"
+              />
+            </div>
+            <div class="col-md-9 col-8 textCol">
+              <div class="card-body">
+                <a class="userName" href="#">Angela Gray</a>
+
+                <p class="card-text d-inline">followed you</p>
+                <span class="redDot">🔴</span>
+                <p class="card-text">
+                  <small class="text-muted">5 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card ends above this line-->
+        <!--card starts under this line-->
+        <div class="card mb-3 unread" onclick="markOneRead(this)">
+          <div class="row g-0">
+            <div class="col-3">
+              <img
+                src="assets/images/avatar-jacob-thompson.webp"
+                class="img-fluid rounded-start mt-3 ms-3 mt-md-4 ms-md-4"
+                alt="avatar-jacob-thompson"
+              />
+            </div>
+            <div class="col-md-9 col-8 textCol">
+              <div class="card-body">
+                <a class="userName" href="#">Jacob Thompson</a>
+
+                <p class="card-text d-inline">has joined your group</p>
+                <a class="mentionedSite" href="#">Chess Club</a>
+                <span class="redDot">🔴</span>
+                <p class="card-text">
+                  <small class="text-muted">1 day ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card ends above this line-->
+        <!--card starts under this line-->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-3">
+              <img
+                src="assets/images/avatar-rizky-hasanuddin.webp"
+                class="img-fluid rounded-start mt-3 ms-3 mt-md-4 ms-md-4"
+                alt="avatar-rizky-hasanuddin"
+              />
+            </div>
+            <div class="col-md-9 col-8 textCol">
+              <div class="card-body">
+                <a class="userName" href="#">Rizky Hasanuddin</a>
+
+                <p class="card-text d-inline">sent you a private message.</p>
+                <a href="#" class="PMparagraph">
+                  <div class="privateMsg">
+                    <p>
+                      <!--this box should be a link to private msg page-->
+                      Hello, thanks for setting up the Chess Club. I've been a
+                      member for a few weeks now and I'm already having lots of
+                      fun and improving my game.
+                    </p>
+                  </div>
+                </a>
+
+                <p class="card-text">
+                  <small class="text-muted">5 days ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card ends above this line-->
+        <!--card starts under this line-->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-3">
+              <img
+                src="assets/images/avatar-kimberly-smith.webp"
+                class="img-fluid rounded-start mt-3 ms-3 mt-md-4 ms-md-4"
+                alt="avatar-kimberly-smith"
+              />
+            </div>
+            <div class="col-md-9 col-8 textCol">
+              <div class="card-body">
+                <a class="userName" href="#">Kimberly Smith</a>
+
+                <p class="card-text d-inline">Commented on your picture.</p>
+                <div class="mentionedPic d-flex justify-content-end">
+                  <a href="#">
+                    <img
+                      class="commentImg w-75"
+                      src="assets/images/image-chess.webp"
+                      alt="image-chess"
+                    />
+                  </a>
+                </div>
+                <p class="card-text d-inline">
+                  <small class="text-muted">1 week ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card ends above this line-->
+        <!--card starts under this line-->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-3">
+              <img
+                src="assets/images/avatar-nathan-peterson.webp"
+                class="img-fluid rounded-start mt-3 ms-3 mt-md-4 ms-md-4"
+                alt="avatar-nathan-peterson"
+              />
+            </div>
+            <div class="col-md-9 col-8 textCol">
+              <div class="card-body">
+                <a class="userName" href="#">Nathan Peterson</a>
+
+                <p class="card-text d-inline">reacted to your recent post</p>
+                <a class="mentionedSite" href="#"
+                  >5 end-game strategies to increase your win rate</a
+                >
+                <p class="card-text">
+                  <small class="text-muted">2 weeks ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card ends above this line-->
+        <!--card starts under this line-->
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-3">
+              <img
+                src="assets/images/avatar-anna-kim.webp"
+                class="img-fluid rounded-start mt-3 ms-3 mt-md-4 ms-md-4"
+                alt="avatar-anna-kim"
+              />
+            </div>
+            <div class="col-md-9 col-8 textCol">
+              <div class="card-body">
+                <a class="userName" href="#">Anna Kim</a>
+
+                <p class="card-text d-inline">left the group</p>
+                <a class="mentionedSite" href="#">Chess Club</a>
+                <p class="card-text">
+                  <small class="text-muted">2 weeks ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--card ends above this line-->
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://parisadarkhal.github.io/CV/">Parisa Darkhal</a>.
+      </p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
